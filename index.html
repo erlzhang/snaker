@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css"/>
+		<title>怀旧版贪吃蛇</title>
+	</head>
+	<body>
+		<div class="score" id="score">0</div>
+		<div class="history">历史最高分数：<span id="history"></span></div>
+		<div class="container">
+			<div id="snake">
+			</div>
+			
+			<div id="pea" class="pea">
+			</div>
+			<div id="failure" class="failure">
+				<h1>您的总分数：</h1>
+				<h2 id="result"></h2>
+				<span onclick="Reset()" class="btn">重新开始</span>
+			</div>
+		</div>
+		<span class="btn" id="pause">暂停</span>
+		<div class="footer">© <a href="https://erl.im/">Erl</a></div>
+		<script type='text/javascript' src='pea.js'></script>
+		<script type='text/javascript' src='snake.js'></script>
+		<script type='text/javascript' src='actions.js'></script>
+	</body>
+</html>
